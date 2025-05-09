@@ -13,6 +13,7 @@ namespace GameStore.BL.Services
     {
         private GameStoreDBContext _context;
 
+        
         public GameProductServices()
         {
             _context = new GameStoreDBContext();
@@ -20,9 +21,20 @@ namespace GameStore.BL.Services
 
         public void Create(GameProduct product)
         {
+            if(product is not null)
+            {
+
             _context.gameProducts.Add(product);
             _context.SaveChanges();
+            }
         }
+        public void Delete(int id)
+        {
+           var product =  _context.gameProducts.Find(id);
+            _context.Remove(product);
+            _context.SaveChanges();
+        }
+
 
     }
 }

@@ -13,3 +13,4 @@ C:\Users\Sabir\source\repos\GameStore\GameStore.BL\obj\Debug\net9.0\GameStore.BL
 C:\Users\Sabir\source\repos\GameStore\GameStore.BL\obj\Debug\net9.0\refint\GameStore.BL.dll
 C:\Users\Sabir\source\repos\GameStore\GameStore.BL\obj\Debug\net9.0\GameStore.BL.pdb
 C:\Users\Sabir\source\repos\GameStore\GameStore.BL\obj\Debug\net9.0\ref\GameStore.BL.dll
+C:\Users\Sabir\source\repos\GameStore\GameStore.BL\obj\Debug\net9.0\GameStore.BL.sourcelink.json

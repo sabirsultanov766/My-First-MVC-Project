@@ -12,3 +12,4 @@ C:\Users\Sabir\source\repos\GameStore\GameStore.DAL\obj\Debug\net9.0\ref\GameSto
 C:\Users\Sabir\source\repos\GameStore\GameStore.DAL\bin\Debug\net9.0\GameStore.DAL.runtimeconfig.json
 C:\Users\Sabir\source\repos\GameStore\GameStore.DAL\obj\Debug\net9.0\GameStore.DAL.csproj.AssemblyReference.cache
 C:\Users\Sabir\source\repos\GameStore\GameStore.DAL\obj\Debug\net9.0\GameStore.DAL.genruntimeconfig.cache
+C:\Users\Sabir\source\repos\GameStore\GameStore.DAL\obj\Debug\net9.0\GameStore.DAL.sourcelink.json

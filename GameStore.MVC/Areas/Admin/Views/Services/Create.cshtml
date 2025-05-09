@@ -1,0 +1,28 @@
+﻿@model GameProduct;
+
+<div class="card-body">
+    <h4 class="card-title">Default form</h4>
+    <p class="card-description"> Basic form layout </p>
+    <form asp-action="Create" class="forms-sample">
+        <div class="form-group">
+            <label for="exampleInputUsername1">Name</label>
+            <input asp-for="Name" type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputUsername1">Genre</label>
+            <input asp-for="Genre" type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputUsername1">Price</label>
+            <input asp-for = "Price" type="number" class="form-control" id="exampleInputUsername1" placeholder="Username">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputUsername1">ImgUrl</label>
+            <input asp-for="ImgUrl" type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+        </div>
+        
+        
+        <button  type="submit" class="btn btn-primary mr-2">Submit</button>
+        <button asp-controller="Panel" asp-action="Index" class="btn btn-dark">Cancel</button>
+    </form>
+</div>
