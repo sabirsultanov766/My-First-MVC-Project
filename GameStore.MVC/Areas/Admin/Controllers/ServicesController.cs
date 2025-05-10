@@ -34,5 +34,27 @@ namespace GameStore.MVC.Areas.Admin.Controllers
            return RedirectToAction("Index","Panel");
         }
 
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+
+           var product = services.GetById(id);
+
+            if (product is null)
+            {
+                return NotFound();
+            }
+           
+            
+            return View(product);
+        }
+        
+        [HttpPost]
+        public IActionResult Update(int id,GameProduct product)
+        {
+            services.Update(id,product);
+            return RedirectToAction("Index", "Panel");
+        }
+
     }
 }

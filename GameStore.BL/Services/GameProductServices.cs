@@ -28,6 +28,33 @@ namespace GameStore.BL.Services
             _context.SaveChanges();
             }
         }
+
+        public void Update(int? id,GameProduct product)
+        {
+           
+            if(id is null)
+            {
+                throw new Exception();
+            }
+            var exProduct = _context.gameProducts.Find(id);
+            
+
+
+            exProduct.Name = product.Name;
+            exProduct.Price = product.Price;
+            exProduct.ImgUrl = product.ImgUrl;
+            exProduct.Genre = product.ImgUrl;
+
+            _context.SaveChanges();
+            
+    
+        }
+
+        public GameProduct? GetById(int id)
+        {
+            var product = _context.gameProducts.Find(id);
+            return product;
+        }
         public void Delete(int id)
         {
            var product =  _context.gameProducts.Find(id);
